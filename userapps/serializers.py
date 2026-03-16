@@ -14,7 +14,7 @@ class UserSerializer(serializers.ModelSerializer):
 # profile serializer
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Profile
+        model = UserSerializer()
         fields = ['fullname','gender','phone','profile_pix']
 
 # registration serializer

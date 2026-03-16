@@ -28,9 +28,9 @@ import os
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://bloomuser.onrender.com','https://bloomuser.onrender.com','http://bloomuser.onrender.com']
 
 
 # Application definition
