@@ -9,8 +9,8 @@ GENDER =(
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     fullname = models.CharField(max_length=225)
-    username = models.CharField(max_length=50, primary_key=True)
-    email = models.EmailField(unique=True)
+    # username = models.CharField(max_length=50, primary_key=True)
+    # email = models.EmailField(unique=True)
     gender = models.CharField(max_length=6,choices=GENDER)
     phone = models.CharField(max_length=15)
     profile_pix = models.ImageField(upload_to="profile",default="me.jpg",null=True,blank=True)
